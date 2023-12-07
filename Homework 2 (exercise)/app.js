@@ -1,8 +1,7 @@
 console.log("ALIVE!");
 let userInput = prompt("How much money do you have?");
 let numberResult = Number(userInput);
-let parseIntResult = parseInt(userInput);
-console.log(userInput, parseIntResult, numberResult);
+console.log(userInput, numberResult);
 if (Number.isNaN(numberResult)) {
   console.log("Invalid input, Enter NUMBERS ONLY!");
 } else if (numberResult >= 35) {
