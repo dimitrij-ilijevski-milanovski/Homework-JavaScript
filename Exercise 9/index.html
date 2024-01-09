@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h2>PhoneBook</h2>
+    <form id="contactForm">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required />
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required />
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input
+        type="tel"
+        id="phoneNumber"
+        name="phoneNumber"
+        pattern="[0-9]{10}"
+        required
+      />
+
+      <button type="button" onclick="saveContact()">Save</button>
+    </form>
+    <br />
+    <table border="1" id="phoneBookTable">
+      <thead>
+        <tr>
+          <td>First Name</td>
+          <td>Last Name</td>
+          <td>Phone Number</td>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

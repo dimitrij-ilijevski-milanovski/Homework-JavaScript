@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <form id="storyForm">
+      <label for="who">Who:</label>
+      <input type="text" id="who" name="who" />
+
+      <label for="what">What:</label>
+      <input type="text" id="what" name="what" />
+
+      <label for="when">When:</label>
+      <input type="text" id="when" name="when" />
+
+      <button type="button" onclick="storyTeller()">Tell the Story</button>
+    </form>
+
+    <div id="story"></div>
+  </body>
+</html>
